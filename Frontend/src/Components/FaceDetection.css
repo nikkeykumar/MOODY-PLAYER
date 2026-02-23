@@ -1,0 +1,79 @@
+.mood-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.video-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.user-video-feed {
+  width: 350px;
+  border-radius: 12px;
+}
+
+.scan-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.scan-btn:hover {
+  transform: scale(1.05);
+}
+
+.scan-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.mood-text {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  .mood-element {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .mood-element {
+    width: 100%;
+    height: 45vh;
+  }
+  .mood-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+  }
+
+  .user-video-feed {
+    max-width: 300px;
+  }
+}
