@@ -61,7 +61,7 @@ const FaceDetection = ({ setSongs }) => {
 
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/songs?mood=${detectedMood}`,
+        `https://moody-player-2y08.onrender.com/api/songs?mood=${detectedMood}`,
       );
       setSongs(res.data.data);
     } catch (err) {
